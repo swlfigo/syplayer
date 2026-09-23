@@ -1,0 +1,19 @@
+// SYPlayerKit.private.modulemap —— 由 MODULEMAP_PRIVATE_FILE 拷进
+// SYPlayerKit.framework/Modules/module.private.modulemap。
+//
+// 为什么是**独立的顶层模块**而不是 SYPlayerKit 的子模块：Swift 不能 import
+// 自己所属的模块，写成 `module SYPlayerKit.Internal` 的话框架自己的 Swift 源
+// 反而看不见它。SYPlayerKit_Private 是另一个模块，框架内的 Swift 可以 import，
+// 而业务侧 `import SYPlayerKit` 不会顺带把它拉进作用域。
+//
+// header "SYPBridge.h" 写相对名即可：framework 模块的头文件查找会依次看
+// Headers/ 与 PrivateHeaders/，本头在后者。
+//
+// 它必须躺在 .framework 里（而不是只放在源码目录靠 SWIFT_INCLUDE_PATHS 找）：
+// SYPlayerKit.swiftmodule 会记下"我 import 过 SYPlayerKit_Private"，App 编译
+// `import SYPlayerKit` 时编译器要能把这个模块也加载起来——放在 framework 内部
+// 才保证 App 的 -F 一定指得到。
+framework module SYPlayerKit_Private {
+    header "SYPBridge.h"
+    export *
+}

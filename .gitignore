@@ -1,0 +1,53 @@
+build/
+build-*/
+# SwiftPM 分发产物（tools/build-xcframework.sh 的输出，含绝对路径的生成工程）。
+# 上面的 build-*/ 已经覆盖，单列一条是为了不依赖那条通配。
+build-spm/
+# SwiftPM 在仓库根跑 swift build / dump-package 时的本地构建目录。
+.build/
+# 一次性工作目录（任务台账、临时报告），不进仓库。
+.superpowers/
+.DS_Store
+*.o
+*.a
+*.i64
+compile_commands.json
+
+# demo 壳：Xcode 用户态状态与构建期生成物，不进仓库。
+# demo/ios/*.xcodeproj、demo/mac/*.xcodeproj 本身要进仓库（由
+# demo/generate_xcodeprojects.rb 生成，是可审查产物）。
+demo/ios/generated/
+demo/mac/generated/
+demo/*/*.xcodeproj/xcuserdata/
+demo/*/*.xcodeproj/project.xcworkspace/xcuserdata/
+demo/*/*.xcodeproj/project.xcworkspace/xcshareddata/
+demo/DerivedData/
+
+# 示例 App：工程与共享 scheme 入库（examples/generate.rb 生成，只含相对路径），
+# Xcode 打开或 xcodebuild 解析包时写出的工作区状态不入库。
+examples/*/*.xcodeproj/xcuserdata/
+examples/*/*.xcodeproj/project.xcworkspace/
+# Xcode 把仓库根当本地包打开时在包根写的状态目录。
+.swiftpm/
+DerivedData/
+
+# —— 工作材料：只存在于本地与私有的 syplayer-work 仓库，绝不进本仓库历史 ——
+# 一旦提交进来，删分支也删不掉（commit 对象按 SHA 仍可访问），
+# 这个仓库就再也不能给别人看了。
+reverse/
+notes/
+docs/algorithms/
+docs/plan/
+docs/blueprint/
+_work/
+tools/analyze.sh
+tools/ida.sh
+tools/regen-objects.sh
+tools/extract.py
+tools/dwarf2h.py
+tools/dwarf2h_all.py
+tools/dig.py
+
+# 本地一次性工作树目录。它落在仓库内部，不加这条的话
+# `git add -A` 可能把无关的工作树内容扫进索引。
+.claude/

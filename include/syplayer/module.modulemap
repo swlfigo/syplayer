@@ -1,0 +1,9 @@
+module SYPlayerC {
+    header "syp_types.h"
+    header "syp_config.h"
+    header "syp_http.h"
+    header "syp_source.h"
+    header "syp_preload.h"
+    header "syp_net.h"
+    export *
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  SYFFmpeg.framework 的隐私清单，由 tools/build-xcframework.sh 在拷贝
+  SYFFmpeg.xcframework 到分发目录时放进每个 slice，FFmpeg 源码与
+  build-ffmpeg/out 都不动。
+
+  声明的 required-reason API 与二进制的 nm -u 一一对应：
+  - 文件时间戳（C617.1）：fstat / lstat。file 协议读本地媒体文件时取大小等
+    元数据；目录遍历相关代码也会调 lstat。
+  二进制不导入 statfs / statvfs、UserDefaults、systemUptime / mach_absolute_time
+  或键盘相关 API，其余类别不声明。不跟踪用户、不收集任何数据。
+-->
+<plist version="1.0">
+<dict>
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>C617.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

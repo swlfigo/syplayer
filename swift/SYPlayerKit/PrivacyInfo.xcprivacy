@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  SYPlayerKit.framework 的隐私清单（只进分发用的动态 framework）。
+
+  声明的 required-reason API 与二进制的 nm -u 一一对应：
+  - 文件时间戳（C617.1）：stat / fstat，以及 std::filesystem::last_write_time
+    （libc++ 内部走 stat）。用途是读缓存目录里自家文件的修改时间与大小，
+    做淘汰排序与索引校验；只碰调用方交给播放器的缓存目录。
+  - 磁盘空间（E174.1）：std::filesystem::space（libc++ 内部走 statvfs）。
+    用途是写缓存前检查剩余空间、空间不足时删旧缓存。
+  不跟踪用户、不联系跟踪域名、不收集任何数据。
+-->
+<plist version="1.0">
+<dict>
+	<key>NSPrivacyTracking</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>C617.1</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>E174.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

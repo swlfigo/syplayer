@@ -1,0 +1,919 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031C201E4C26B41AE329E894 /* PreloadSampleServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF7AC7ECE1EC98F142F93A /* PreloadSampleServer.swift */; };
+		035E978EB43AA1F4C3BF8BB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80BD48C9FE87E64D1035D8F /* UIKit.framework */; };
+		0B295A4629B182DC7484A1EF /* SYPBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = B00DAB6F50503411320163D6 /* SYPBridge.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		103A2EE3807B0ECCD45F3C19 /* pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1201E751339419CD59C8ACDC /* pipeline.cpp */; };
+		146048AC7316ADE160B06B3D /* SYFFmpeg.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B39E2235959D4EECCECE8DF2 /* SYFFmpeg.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		17B137D95A1A32F5EC28949D /* audio_ring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17B8EA9736E6A9A197032C4A /* audio_ring.cpp */; };
+		19A36D63957870EC0BF052B7 /* SYPlayerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B2772E0D8BFCE7EB685B98 /* SYPlayerState.swift */; };
+		259BB53CB1BBA53206713E6F /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 22847C0EE50C88073C723A13 /* sample.mp4 */; };
+		2ADB3E70704D8F5DBA8B5696 /* avio_bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A68D3EAC33D0B2EE6DC05994 /* avio_bridge.cpp */; };
+		2B3D7894F524A5FDDAF58904 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95645289D39886684816E2D0 /* CoreVideo.framework */; };
+		3280F6953A34096EDBE2ACE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4964A3A952BD33755AE036 /* AppDelegate.swift */; };
+		32F4F305F44967F6C166036F /* hole_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10F1CBE22DA7B916B7E890B4 /* hole_set.cpp */; };
+		3A004C784C497128A97E69CE /* metal_renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97AEF972875D232788FD03C6 /* metal_renderer.mm */; };
+		3B744FD7F5D72C797B4B7A2A /* media_info_provider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7CB6FDDE7C48DDBAD8E487A /* media_info_provider.cpp */; };
+		3D9BB5E85D0432404D22958E /* time_source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFCF8CE03E9FF10D8F303CD6 /* time_source.cpp */; };
+		401CAD7DB71580BEC5B662E1 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8732CC833EFF9B1AE4ADC2E2 /* PlayerViewController.swift */; };
+		419908AD6C0FB4D47867C01C /* cache_index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DCECF9CEE7DC3A06D90E774 /* cache_index.cpp */; };
+		427485E5D4773E4B31520739 /* SYPlayerSnapshotMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98C45CD6C4BE5E88D1F34A4 /* SYPlayerSnapshotMapping.swift */; };
+		42A9D4AD6A7A01AC36C85513 /* SYPlayerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02BF6E76E124F74BBA5A04EA /* SYPlayerKit.framework */; };
+		47D37C19E86CDD2B918590BD /* packet_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B763543B9F466516F9972AF5 /* packet_queue.cpp */; };
+		4D8B13E016D2E056B39142A4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9370FAA28C935C267406F070 /* AudioToolbox.framework */; };
+		4FAA4062045727A4BC469541 /* frame_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCD88F99BE631CECCCB3A014 /* frame_queue.cpp */; };
+		502757956CA4950E1C391A9D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B5E5F3D9D061623E381F05 /* CoreMedia.framework */; };
+		5418713550C475677693D2E4 /* SwiftUIPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F7C56933E304B86E68A46 /* SwiftUIPlayerViewController.swift */; };
+		62D87DCA36EB29C28AA3188F /* SYPlayerPreloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9144FA5E9612867A40E4FD /* SYPlayerPreloader.swift */; };
+		642F176AB96FFECD934973B1 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A895C92D79309E8D7BBC8471 /* VideoToolbox.framework */; };
+		65A3109C5A5216519CAD6D61 /* preconnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0282895315282B408EABBA8C /* preconnector.cpp */; };
+		6E78DA85E01536ACE4EEEC0F /* SYPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A9D4B710085F7A2B51772 /* SYPlayerView.swift */; };
+		6F909943C6C564DEA5271569 /* SYPlayerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04F8F0EC850B8036BDEBC98 /* SYPlayerError.swift */; };
+		7606C119B813BF714602C452 /* source_bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1FBE4D41BF97544C6755B88 /* source_bridge.cpp */; };
+		7822AED184CF73B125D726AA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B394F54CD1D782C43F66EF58 /* AVFoundation.framework */; };
+		83FA90DAD22E23E8CE318E4A /* dl_task.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F2344D0F38D48A53174E2EA /* dl_task.cpp */; };
+		851F1A2DE119F57AAA6C7B8F /* SYPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4162D159847E21C5578957 /* SYPlayer.swift */; };
+		885D2CCF767A2449A0EEBB6B /* demuxer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60F08E685E723B191394BA2A /* demuxer.cpp */; };
+		88C81A73F1743CADFACD8A01 /* frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 629BF2F7C39407AD305EA9D5 /* frame.cpp */; };
+		8A41C50DDF3308AE869BA371 /* hls_session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71AA103180525DED34653367 /* hls_session.cpp */; };
+		8B89196BA0E0EA3CB9B5E0A2 /* url_rewrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D621F53E8D5C1DA4DC798FBE /* url_rewrite.cpp */; };
+		8E9D52FFAE3DB6572C03FCBB /* PreloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BDC6FA505567FDAD3DAA6 /* PreloadViewController.swift */; };
+		912467EC2345C7466B968AE7 /* syp_source_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F886284EC4C3EC4BC98C5C9B /* syp_source_api.cpp */; };
+		926356534922753B4202D0B7 /* SYPlayerViewRepresentable+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B26351B9A0C33FBDC81B35 /* SYPlayerViewRepresentable+AppKit.swift */; };
+		955911858814F057659383D6 /* SYPlayerNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7228EBD90D7CCB6747CECB /* SYPlayerNetwork.swift */; };
+		955A2FADC8A626D6F04D7931 /* health_ticker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79CBE5BA01A361D6812F17F4 /* health_ticker.cpp */; };
+		95BA586D79D3AB6079FD4C40 /* cache_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7BF660D8C84B20BD692DFD3 /* cache_file.cpp */; };
+		9B0FF29CB03AD1D1A72F3167 /* video_geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE25A0795B0DF1126D9011DB /* video_geometry.cpp */; };
+		9BB1A553977E977ADB5FB148 /* SYPlayerView+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A6085344694FB275BE5A68 /* SYPlayerView+AppKit.swift */; };
+		A4F571E667110043E5D11017 /* SYPlayerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F03A7F653D2B814ED3A52525 /* SYPlayerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6F21DCCA3FEDA980D4166EC /* m3u8_scan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B3AA1C56F602E75449DD0F2 /* m3u8_scan.cpp */; };
+		A8CFDC5F2E5EE5D3A2C75A12 /* cache_store.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9608E924F1B872DAAF787C14 /* cache_store.cpp */; };
+		B0081DD981B977C1C03E5ACF /* ffmpeg_video_decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4909E2BB76D951ECE771A52E /* ffmpeg_video_decoder.cpp */; };
+		B0EC6149D889F778EB436EDA /* syp_preload_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F06F6AAF6E88B77FD7EAEFFD /* syp_preload_api.cpp */; };
+		B383A0F7D4F3B9C04950390D /* apple_http_backend.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FAFA3B6C953B5A60017B500 /* apple_http_backend.mm */; };
+		B4EA5AA5EF6321833931A183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76B66A2F1685738EFE33CBD /* Foundation.framework */; };
+		B6BEB9C330C1F324EA50DC95 /* playlist_fetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72D9840C645FDF8496F38261 /* playlist_fetcher.cpp */; };
+		B719D76A6A2763800005A0BD /* preloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DE24433F5685F06D9A1442A /* preloader.cpp */; };
+		B7D59CA41412505977A4E4C5 /* SYFFmpeg.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39E2235959D4EECCECE8DF2 /* SYFFmpeg.xcframework */; };
+		C1617E72BE1D09E8CE563233 /* ffmpeg_audio_decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8703FB714E0E0EFF7059DE6 /* ffmpeg_audio_decoder.cpp */; };
+		C3A46D3E44EEB43C008346FE /* SYPlayerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924254DEC6942649C2BEA97 /* SYPlayerLayer.swift */; };
+		C400CF1BF517C5197886E672 /* track_player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B40E62D930C4BD24BB00F9D /* track_player.cpp */; };
+		D66CB928C3A3AB24DEF5AD4F /* scheduler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA46DAF597304A4B35D2F4FF /* scheduler.cpp */; };
+		D6DEA15CB34E25DE64A57A70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76B66A2F1685738EFE33CBD /* Foundation.framework */; };
+		D845C5060A5E0C7445CC3AA0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17FB82DDB4F6EB69C2105EA /* CoreAudio.framework */; };
+		DB4F1CAE10EF2418378388FC /* SYPlayerViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C52F528970EAA3FFD9FB1 /* SYPlayerViewRepresentable.swift */; };
+		DBDC8785073F8FC0737681C0 /* syp_net_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65CB06C71D408081A0FD8DAC /* syp_net_api.cpp */; };
+		DD4C4808A1B99EA49629E66C /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBF698774BCCCE8A9CBC53F /* Metal.framework */; };
+		E23EA4487EC162F14C61C7C0 /* vt_decode_backend.mm in Sources */ = {isa = PBXBuildFile; fileRef = 56AF8037487B25D4D9876C20 /* vt_decode_backend.mm */; };
+		EA2198256C38E76E12DE1CE1 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3577EC634E4F404383B60167 /* PlayerView.swift */; };
+		ECFB9B0C6B66259D5AFD2083 /* audio_unit_sink.mm in Sources */ = {isa = PBXBuildFile; fileRef = 178F050C4BC49F5B6D105324 /* audio_unit_sink.mm */; };
+		FBBE5464BDDFC436A3E0B003 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1DC5ADCB9E8D55AAFC82BC /* QuartzCore.framework */; };
+		FC133348E6D52C2E692353ED /* SYPBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87EEC68162EF318FE799E817 /* SYPBridge.mm */; };
+		FD1884950BE2E394D6FD87C6 /* rate_limiter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB3478F7DD460F8CADA33CD2 /* rate_limiter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29A0B78E0150B6FBEAD30878 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 067D7DC7AED1E4E89E18FC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F070B385600522037EE69A51;
+			remoteInfo = SYPlayerKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13CAA98C866703E4D6C7978A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				146048AC7316ADE160B06B3D /* SYFFmpeg.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0282895315282B408EABBA8C /* preconnector.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = preconnector.cpp; sourceTree = "<group>"; };
+		02BF6E76E124F74BBA5A04EA /* SYPlayerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYPlayerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10F1CBE22DA7B916B7E890B4 /* hole_set.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = hole_set.cpp; sourceTree = "<group>"; };
+		1201E751339419CD59C8ACDC /* pipeline.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = pipeline.cpp; sourceTree = "<group>"; };
+		178F050C4BC49F5B6D105324 /* audio_unit_sink.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = audio_unit_sink.mm; sourceTree = "<group>"; };
+		17B8EA9736E6A9A197032C4A /* audio_ring.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = audio_ring.cpp; sourceTree = "<group>"; };
+		1B40E62D930C4BD24BB00F9D /* track_player.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = track_player.cpp; sourceTree = "<group>"; };
+		1DE24433F5685F06D9A1442A /* preloader.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = preloader.cpp; sourceTree = "<group>"; };
+		1F1F7C56933E304B86E68A46 /* SwiftUIPlayerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftUIPlayerViewController.swift; sourceTree = "<group>"; };
+		22847C0EE50C88073C723A13 /* sample.mp4 */ = {isa = PBXFileReference; includeInIndex = 1; name = sample.mp4; path = Resources/sample.mp4; sourceTree = "<group>"; };
+		26D818D0D62D860399659D25 /* syplayer-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "syplayer-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2344D0F38D48A53174E2EA /* dl_task.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = dl_task.cpp; sourceTree = "<group>"; };
+		3577EC634E4F404383B60167 /* PlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		485A9D4B710085F7A2B51772 /* SYPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYPlayerView.swift; sourceTree = "<group>"; };
+		4909E2BB76D951ECE771A52E /* ffmpeg_video_decoder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = ffmpeg_video_decoder.cpp; sourceTree = "<group>"; };
+		4B9144FA5E9612867A40E4FD /* SYPlayerPreloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYPlayerPreloader.swift; sourceTree = "<group>"; };
+		4E2BDC6FA505567FDAD3DAA6 /* PreloadViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreloadViewController.swift; sourceTree = "<group>"; };
+		4E4162D159847E21C5578957 /* SYPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYPlayer.swift; sourceTree = "<group>"; };
+		4FAFA3B6C953B5A60017B500 /* apple_http_backend.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = apple_http_backend.mm; sourceTree = "<group>"; };
+		56AF8037487B25D4D9876C20 /* vt_decode_backend.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = vt_decode_backend.mm; sourceTree = "<group>"; };
+		60F08E685E723B191394BA2A /* demuxer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = demuxer.cpp; sourceTree = "<group>"; };
+		629BF2F7C39407AD305EA9D5 /* frame.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = frame.cpp; sourceTree = "<group>"; };
+		65CB06C71D408081A0FD8DAC /* syp_net_api.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = syp_net_api.cpp; sourceTree = "<group>"; };
+		71AA103180525DED34653367 /* hls_session.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = hls_session.cpp; path = hls/hls_session.cpp; sourceTree = "<group>"; };
+		72D9840C645FDF8496F38261 /* playlist_fetcher.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = playlist_fetcher.cpp; path = hls/playlist_fetcher.cpp; sourceTree = "<group>"; };
+		79CBE5BA01A361D6812F17F4 /* health_ticker.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = health_ticker.cpp; sourceTree = "<group>"; };
+		7DCECF9CEE7DC3A06D90E774 /* cache_index.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = cache_index.cpp; sourceTree = "<group>"; };
+		85AF7AC7ECE1EC98F142F93A /* PreloadSampleServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreloadSampleServer.swift; sourceTree = "<group>"; };
+		8732CC833EFF9B1AE4ADC2E2 /* PlayerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		87EEC68162EF318FE799E817 /* SYPBridge.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = SYPBridge.mm; sourceTree = "<group>"; };
+		8B3AA1C56F602E75449DD0F2 /* m3u8_scan.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = m3u8_scan.cpp; sourceTree = "<group>"; };
+		9370FAA28C935C267406F070 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		95645289D39886684816E2D0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		958C52F528970EAA3FFD9FB1 /* SYPlayerViewRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYPlayerViewRepresentable.swift; sourceTree = "<group>"; };
+		9608E924F1B872DAAF787C14 /* cache_store.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = cache_store.cpp; sourceTree = "<group>"; };
+		97AEF972875D232788FD03C6 /* metal_renderer.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = metal_renderer.mm; sourceTree = "<group>"; };
+		A04F8F0EC850B8036BDEBC98 /* SYPlayerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYPlayerError.swift; sourceTree = "<group>"; };
+		A68D3EAC33D0B2EE6DC05994 /* avio_bridge.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = avio_bridge.cpp; sourceTree = "<group>"; };
+		A895C92D79309E8D7BBC8471 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		AB3478F7DD460F8CADA33CD2 /* rate_limiter.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = rate_limiter.cpp; sourceTree = "<group>"; };
+		ADBF698774BCCCE8A9CBC53F /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		B00DAB6F50503411320163D6 /* SYPBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SYPBridge.h; sourceTree = "<group>"; };
+		B394F54CD1D782C43F66EF58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		B39E2235959D4EECCECE8DF2 /* SYFFmpeg.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = SYFFmpeg.xcframework; path = "../../build-ffmpeg/out/SYFFmpeg.xcframework"; sourceTree = "<group>"; };
+		B6B26351B9A0C33FBDC81B35 /* SYPlayerViewRepresentable+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SYPlayerViewRepresentable+AppKit.swift"; sourceTree = "<group>"; };
+		B763543B9F466516F9972AF5 /* packet_queue.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = packet_queue.cpp; sourceTree = "<group>"; };
+		B8703FB714E0E0EFF7059DE6 /* ffmpeg_audio_decoder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = ffmpeg_audio_decoder.cpp; sourceTree = "<group>"; };
+		B9B5E5F3D9D061623E381F05 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		BA3EB7B8BCB2E97F775E277E /* SYPlayerKit.private.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SYPlayerKit.private.modulemap; sourceTree = "<group>"; };
+		BCD88F99BE631CECCCB3A014 /* frame_queue.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = frame_queue.cpp; sourceTree = "<group>"; };
+		C1FBE4D41BF97544C6755B88 /* source_bridge.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = source_bridge.cpp; sourceTree = "<group>"; };
+		C5A6085344694FB275BE5A68 /* SYPlayerView+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "SYPlayerView+AppKit.swift"; sourceTree = "<group>"; };
+		C924254DEC6942649C2BEA97 /* SYPlayerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYPlayerLayer.swift; sourceTree = "<group>"; };
+		C98C45CD6C4BE5E88D1F34A4 /* SYPlayerSnapshotMapping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYPlayerSnapshotMapping.swift; sourceTree = "<group>"; };
+		CE25A0795B0DF1126D9011DB /* video_geometry.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = video_geometry.cpp; sourceTree = "<group>"; };
+		D17FB82DDB4F6EB69C2105EA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		D621F53E8D5C1DA4DC798FBE /* url_rewrite.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = url_rewrite.cpp; path = hls/url_rewrite.cpp; sourceTree = "<group>"; };
+		D7BF660D8C84B20BD692DFD3 /* cache_file.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = cache_file.cpp; sourceTree = "<group>"; };
+		DF4964A3A952BD33755AE036 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E76B66A2F1685738EFE33CBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EE1DC5ADCB9E8D55AAFC82BC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		F03A7F653D2B814ED3A52525 /* SYPlayerKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SYPlayerKit.h; sourceTree = "<group>"; };
+		F06F6AAF6E88B77FD7EAEFFD /* syp_preload_api.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = syp_preload_api.cpp; sourceTree = "<group>"; };
+		F3B2772E0D8BFCE7EB685B98 /* SYPlayerState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYPlayerState.swift; sourceTree = "<group>"; };
+		F7CB6FDDE7C48DDBAD8E487A /* media_info_provider.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = media_info_provider.cpp; sourceTree = "<group>"; };
+		F80BD48C9FE87E64D1035D8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F886284EC4C3EC4BC98C5C9B /* syp_source_api.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = syp_source_api.cpp; sourceTree = "<group>"; };
+		FA46DAF597304A4B35D2F4FF /* scheduler.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = scheduler.cpp; sourceTree = "<group>"; };
+		FE7228EBD90D7CCB6747CECB /* SYPlayerNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYPlayerNetwork.swift; sourceTree = "<group>"; };
+		FFCF8CE03E9FF10D8F303CD6 /* time_source.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = time_source.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		083A15A25511515E70978CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4EA5AA5EF6321833931A183 /* Foundation.framework in Frameworks */,
+				42A9D4AD6A7A01AC36C85513 /* SYPlayerKit.framework in Frameworks */,
+				B7D59CA41412505977A4E4C5 /* SYFFmpeg.xcframework in Frameworks */,
+				035E978EB43AA1F4C3BF8BB4 /* UIKit.framework in Frameworks */,
+				4D8B13E016D2E056B39142A4 /* AudioToolbox.framework in Frameworks */,
+				D845C5060A5E0C7445CC3AA0 /* CoreAudio.framework in Frameworks */,
+				DD4C4808A1B99EA49629E66C /* Metal.framework in Frameworks */,
+				642F176AB96FFECD934973B1 /* VideoToolbox.framework in Frameworks */,
+				2B3D7894F524A5FDDAF58904 /* CoreVideo.framework in Frameworks */,
+				502757956CA4950E1C391A9D /* CoreMedia.framework in Frameworks */,
+				FBBE5464BDDFC436A3E0B003 /* QuartzCore.framework in Frameworks */,
+				7822AED184CF73B125D726AA /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE72591319C46891B1542894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6DEA15CB34E25DE64A57A70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09D9FBC3BD3B18879A61111A /* src-dl */ = {
+			isa = PBXGroup;
+			children = (
+				10F1CBE22DA7B916B7E890B4 /* hole_set.cpp */,
+				8B3AA1C56F602E75449DD0F2 /* m3u8_scan.cpp */,
+				7DCECF9CEE7DC3A06D90E774 /* cache_index.cpp */,
+				D7BF660D8C84B20BD692DFD3 /* cache_file.cpp */,
+				9608E924F1B872DAAF787C14 /* cache_store.cpp */,
+				2F2344D0F38D48A53174E2EA /* dl_task.cpp */,
+				AB3478F7DD460F8CADA33CD2 /* rate_limiter.cpp */,
+				79CBE5BA01A361D6812F17F4 /* health_ticker.cpp */,
+				0282895315282B408EABBA8C /* preconnector.cpp */,
+				FA46DAF597304A4B35D2F4FF /* scheduler.cpp */,
+				1DE24433F5685F06D9A1442A /* preloader.cpp */,
+				C1FBE4D41BF97544C6755B88 /* source_bridge.cpp */,
+				F886284EC4C3EC4BC98C5C9B /* syp_source_api.cpp */,
+				F06F6AAF6E88B77FD7EAEFFD /* syp_preload_api.cpp */,
+				65CB06C71D408081A0FD8DAC /* syp_net_api.cpp */,
+			);
+			name = "src-dl";
+			path = ../../src/dl;
+			sourceTree = "<group>";
+		};
+		0F3838B8BD7C578FF928752F /* SYPlayerKit */ = {
+			isa = PBXGroup;
+			children = (
+				C30C194932384A62922031DA /* Internal */,
+				A04F8F0EC850B8036BDEBC98 /* SYPlayerError.swift */,
+				F3B2772E0D8BFCE7EB685B98 /* SYPlayerState.swift */,
+				C98C45CD6C4BE5E88D1F34A4 /* SYPlayerSnapshotMapping.swift */,
+				C924254DEC6942649C2BEA97 /* SYPlayerLayer.swift */,
+				485A9D4B710085F7A2B51772 /* SYPlayerView.swift */,
+				C5A6085344694FB275BE5A68 /* SYPlayerView+AppKit.swift */,
+				4E4162D159847E21C5578957 /* SYPlayer.swift */,
+				4B9144FA5E9612867A40E4FD /* SYPlayerPreloader.swift */,
+				958C52F528970EAA3FFD9FB1 /* SYPlayerViewRepresentable.swift */,
+				B6B26351B9A0C33FBDC81B35 /* SYPlayerViewRepresentable+AppKit.swift */,
+				FE7228EBD90D7CCB6747CECB /* SYPlayerNetwork.swift */,
+				F03A7F653D2B814ED3A52525 /* SYPlayerKit.h */,
+				BA3EB7B8BCB2E97F775E277E /* SYPlayerKit.private.modulemap */,
+			);
+			name = SYPlayerKit;
+			path = ../../swift/SYPlayerKit;
+			sourceTree = "<group>";
+		};
+		2C932FE90D6B674164443B73 /* src-platform-apple */ = {
+			isa = PBXGroup;
+			children = (
+				4FAFA3B6C953B5A60017B500 /* apple_http_backend.mm */,
+				178F050C4BC49F5B6D105324 /* audio_unit_sink.mm */,
+				97AEF972875D232788FD03C6 /* metal_renderer.mm */,
+				56AF8037487B25D4D9876C20 /* vt_decode_backend.mm */,
+			);
+			name = "src-platform-apple";
+			path = ../../src/platform/apple;
+			sourceTree = "<group>";
+		};
+		48FBA50EA5C19EAF38DEA6CF /* src-media */ = {
+			isa = PBXGroup;
+			children = (
+				17B8EA9736E6A9A197032C4A /* audio_ring.cpp */,
+				A68D3EAC33D0B2EE6DC05994 /* avio_bridge.cpp */,
+				60F08E685E723B191394BA2A /* demuxer.cpp */,
+				B8703FB714E0E0EFF7059DE6 /* ffmpeg_audio_decoder.cpp */,
+				4909E2BB76D951ECE771A52E /* ffmpeg_video_decoder.cpp */,
+				629BF2F7C39407AD305EA9D5 /* frame.cpp */,
+				BCD88F99BE631CECCCB3A014 /* frame_queue.cpp */,
+				71AA103180525DED34653367 /* hls_session.cpp */,
+				72D9840C645FDF8496F38261 /* playlist_fetcher.cpp */,
+				D621F53E8D5C1DA4DC798FBE /* url_rewrite.cpp */,
+				F7CB6FDDE7C48DDBAD8E487A /* media_info_provider.cpp */,
+				B763543B9F466516F9972AF5 /* packet_queue.cpp */,
+				1201E751339419CD59C8ACDC /* pipeline.cpp */,
+				FFCF8CE03E9FF10D8F303CD6 /* time_source.cpp */,
+				1B40E62D930C4BD24BB00F9D /* track_player.cpp */,
+				CE25A0795B0DF1126D9011DB /* video_geometry.cpp */,
+			);
+			name = "src-media";
+			path = ../../src/media;
+			sourceTree = "<group>";
+		};
+		68F0B76966729484A689B103 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02BF6E76E124F74BBA5A04EA /* SYPlayerKit.framework */,
+				26D818D0D62D860399659D25 /* syplayer-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A5C79DD618345677CCBADB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B39E2235959D4EECCECE8DF2 /* SYFFmpeg.xcframework */,
+				AEE371FC3F3DAAC103EB9ADB /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		877BFE239334AF069613A037 = {
+			isa = PBXGroup;
+			children = (
+				68F0B76966729484A689B103 /* Products */,
+				7A5C79DD618345677CCBADB9 /* Frameworks */,
+				0F3838B8BD7C578FF928752F /* SYPlayerKit */,
+				09D9FBC3BD3B18879A61111A /* src-dl */,
+				48FBA50EA5C19EAF38DEA6CF /* src-media */,
+				2C932FE90D6B674164443B73 /* src-platform-apple */,
+				F0C4D0CCC43C5D14C854E5CE /* shared */,
+			);
+			sourceTree = "<group>";
+		};
+		AEE371FC3F3DAAC103EB9ADB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E76B66A2F1685738EFE33CBD /* Foundation.framework */,
+				F80BD48C9FE87E64D1035D8F /* UIKit.framework */,
+				9370FAA28C935C267406F070 /* AudioToolbox.framework */,
+				D17FB82DDB4F6EB69C2105EA /* CoreAudio.framework */,
+				ADBF698774BCCCE8A9CBC53F /* Metal.framework */,
+				A895C92D79309E8D7BBC8471 /* VideoToolbox.framework */,
+				95645289D39886684816E2D0 /* CoreVideo.framework */,
+				B9B5E5F3D9D061623E381F05 /* CoreMedia.framework */,
+				EE1DC5ADCB9E8D55AAFC82BC /* QuartzCore.framework */,
+				B394F54CD1D782C43F66EF58 /* AVFoundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C30C194932384A62922031DA /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				87EEC68162EF318FE799E817 /* SYPBridge.mm */,
+				B00DAB6F50503411320163D6 /* SYPBridge.h */,
+			);
+			name = Internal;
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		F0C4D0CCC43C5D14C854E5CE /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				DF4964A3A952BD33755AE036 /* AppDelegate.swift */,
+				3577EC634E4F404383B60167 /* PlayerView.swift */,
+				8732CC833EFF9B1AE4ADC2E2 /* PlayerViewController.swift */,
+				1F1F7C56933E304B86E68A46 /* SwiftUIPlayerViewController.swift */,
+				4E2BDC6FA505567FDAD3DAA6 /* PreloadViewController.swift */,
+				85AF7AC7ECE1EC98F142F93A /* PreloadSampleServer.swift */,
+				22847C0EE50C88073C723A13 /* sample.mp4 */,
+			);
+			name = shared;
+			path = ../shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BB1B8865EC7EA193D771D6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F571E667110043E5D11017 /* SYPlayerKit.h in Headers */,
+				0B295A4629B182DC7484A1EF /* SYPBridge.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		144B58DE3198A8C66DA46E78 /* syplayer-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7863FE8DDA7D46D34555D34 /* Build configuration list for PBXNativeTarget "syplayer-ios" */;
+			buildPhases = (
+				0B45E1B582A1DCD886147975 /* Sources */,
+				083A15A25511515E70978CB5 /* Frameworks */,
+				E4D07AE3209DAC5C8FFC8C4E /* Resources */,
+				13CAA98C866703E4D6C7978A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2330660D8D13439F91BF181E /* PBXTargetDependency */,
+			);
+			name = "syplayer-ios";
+			productName = "syplayer-ios";
+			productReference = 26D818D0D62D860399659D25 /* syplayer-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F070B385600522037EE69A51 /* SYPlayerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F4B9DA271B239C75B4179F0 /* Build configuration list for PBXNativeTarget "SYPlayerKit" */;
+			buildPhases = (
+				4EF9D7DAA8E817852B0A6484 /* Generate Metal Shader Header */,
+				1BB1B8865EC7EA193D771D6C /* Headers */,
+				CAA3E15414437BDEE74717C7 /* Sources */,
+				AE72591319C46891B1542894 /* Frameworks */,
+				6793660018458CC6BB70D4D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SYPlayerKit;
+			productName = SYPlayerKit;
+			productReference = 02BF6E76E124F74BBA5A04EA /* SYPlayerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		067D7DC7AED1E4E89E18FC41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = CB5690F81D2A44ADECCD79B2 /* Build configuration list for PBXProject "syplayer-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 877BFE239334AF069613A037;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 68F0B76966729484A689B103 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F070B385600522037EE69A51 /* SYPlayerKit */,
+				144B58DE3198A8C66DA46E78 /* syplayer-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6793660018458CC6BB70D4D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D07AE3209DAC5C8FFC8C4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259BB53CB1BBA53206713E6F /* sample.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EF9D7DAA8E817852B0A6484 /* Generate Metal Shader Header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				/Users/sylar/Documents/syplayer/src/platform/apple/video_shaders.metal,
+				"/Users/sylar/Documents/syplayer/tools/gen-embedded-header.sh",
+			);
+			name = "Generate Metal Shader Header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/generated/syp_video_shaders_metal_source.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nmkdir -p \"$SRCROOT/generated\"\nbash \"/Users/sylar/Documents/syplayer/tools/gen-embedded-header.sh\" \"/Users/sylar/Documents/syplayer/src/platform/apple/video_shaders.metal\" \"$SRCROOT/generated/syp_video_shaders_metal_source.h\" \"syp::platform\" \"kVideoShadersMetalSource\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B45E1B582A1DCD886147975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3280F6953A34096EDBE2ACE4 /* AppDelegate.swift in Sources */,
+				EA2198256C38E76E12DE1CE1 /* PlayerView.swift in Sources */,
+				401CAD7DB71580BEC5B662E1 /* PlayerViewController.swift in Sources */,
+				5418713550C475677693D2E4 /* SwiftUIPlayerViewController.swift in Sources */,
+				8E9D52FFAE3DB6572C03FCBB /* PreloadViewController.swift in Sources */,
+				031C201E4C26B41AE329E894 /* PreloadSampleServer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA3E15414437BDEE74717C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F4F305F44967F6C166036F /* hole_set.cpp in Sources */,
+				A6F21DCCA3FEDA980D4166EC /* m3u8_scan.cpp in Sources */,
+				419908AD6C0FB4D47867C01C /* cache_index.cpp in Sources */,
+				95BA586D79D3AB6079FD4C40 /* cache_file.cpp in Sources */,
+				A8CFDC5F2E5EE5D3A2C75A12 /* cache_store.cpp in Sources */,
+				83FA90DAD22E23E8CE318E4A /* dl_task.cpp in Sources */,
+				FD1884950BE2E394D6FD87C6 /* rate_limiter.cpp in Sources */,
+				955A2FADC8A626D6F04D7931 /* health_ticker.cpp in Sources */,
+				65A3109C5A5216519CAD6D61 /* preconnector.cpp in Sources */,
+				D66CB928C3A3AB24DEF5AD4F /* scheduler.cpp in Sources */,
+				B719D76A6A2763800005A0BD /* preloader.cpp in Sources */,
+				7606C119B813BF714602C452 /* source_bridge.cpp in Sources */,
+				912467EC2345C7466B968AE7 /* syp_source_api.cpp in Sources */,
+				B0EC6149D889F778EB436EDA /* syp_preload_api.cpp in Sources */,
+				DBDC8785073F8FC0737681C0 /* syp_net_api.cpp in Sources */,
+				17B137D95A1A32F5EC28949D /* audio_ring.cpp in Sources */,
+				2ADB3E70704D8F5DBA8B5696 /* avio_bridge.cpp in Sources */,
+				885D2CCF767A2449A0EEBB6B /* demuxer.cpp in Sources */,
+				C1617E72BE1D09E8CE563233 /* ffmpeg_audio_decoder.cpp in Sources */,
+				B0081DD981B977C1C03E5ACF /* ffmpeg_video_decoder.cpp in Sources */,
+				88C81A73F1743CADFACD8A01 /* frame.cpp in Sources */,
+				4FAA4062045727A4BC469541 /* frame_queue.cpp in Sources */,
+				8A41C50DDF3308AE869BA371 /* hls_session.cpp in Sources */,
+				B6BEB9C330C1F324EA50DC95 /* playlist_fetcher.cpp in Sources */,
+				8B89196BA0E0EA3CB9B5E0A2 /* url_rewrite.cpp in Sources */,
+				3B744FD7F5D72C797B4B7A2A /* media_info_provider.cpp in Sources */,
+				47D37C19E86CDD2B918590BD /* packet_queue.cpp in Sources */,
+				103A2EE3807B0ECCD45F3C19 /* pipeline.cpp in Sources */,
+				3D9BB5E85D0432404D22958E /* time_source.cpp in Sources */,
+				C400CF1BF517C5197886E672 /* track_player.cpp in Sources */,
+				9B0FF29CB03AD1D1A72F3167 /* video_geometry.cpp in Sources */,
+				B383A0F7D4F3B9C04950390D /* apple_http_backend.mm in Sources */,
+				ECFB9B0C6B66259D5AFD2083 /* audio_unit_sink.mm in Sources */,
+				3A004C784C497128A97E69CE /* metal_renderer.mm in Sources */,
+				E23EA4487EC162F14C61C7C0 /* vt_decode_backend.mm in Sources */,
+				FC133348E6D52C2E692353ED /* SYPBridge.mm in Sources */,
+				6F909943C6C564DEA5271569 /* SYPlayerError.swift in Sources */,
+				19A36D63957870EC0BF052B7 /* SYPlayerState.swift in Sources */,
+				427485E5D4773E4B31520739 /* SYPlayerSnapshotMapping.swift in Sources */,
+				C3A46D3E44EEB43C008346FE /* SYPlayerLayer.swift in Sources */,
+				6E78DA85E01536ACE4EEEC0F /* SYPlayerView.swift in Sources */,
+				9BB1A553977E977ADB5FB148 /* SYPlayerView+AppKit.swift in Sources */,
+				851F1A2DE119F57AAA6C7B8F /* SYPlayer.swift in Sources */,
+				62D87DCA36EB29C28AA3188F /* SYPlayerPreloader.swift in Sources */,
+				DB4F1CAE10EF2418378388FC /* SYPlayerViewRepresentable.swift in Sources */,
+				926356534922753B4202D0B7 /* SYPlayerViewRepresentable+AppKit.swift in Sources */,
+				955911858814F057659383D6 /* SYPlayerNetwork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2330660D8D13439F91BF181E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SYPlayerKit;
+			target = F070B385600522037EE69A51 /* SYPlayerKit */;
+			targetProxy = 29A0B78E0150B6FBEAD30878 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2784AD066BBF6D467C83D27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++23";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+					"/Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sylar/Documents/syplayer/include,
+					/Users/sylar/Documents/syplayer/src,
+					"$(SRCROOT)/generated",
+				);
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_PRIVATE_FILE = /Users/sylar/Documents/syplayer/swift/SYPlayerKit/SYPlayerKit.private.modulemap;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-include",
+					"/Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64/SYFFmpeg.framework/Headers/syp_ffmpeg_prefix.h",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syplayer.SYPlayerKit;
+				PRODUCT_NAME = SYPlayerKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(inherited) /Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64/SYFFmpeg.framework/Headers";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wconversion",
+					"-Wsign-conversion",
+				);
+			};
+			name = Release;
+		};
+		34F9A10849FE8429CA2FAA35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+					"/Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-include",
+					"/Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64/SYFFmpeg.framework/Headers/syp_ffmpeg_prefix.h",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syplayer.demo.ios;
+				PRODUCT_NAME = "syplayer-ios";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wconversion",
+					"-Wsign-conversion",
+				);
+			};
+			name = Release;
+		};
+		506AA51CC6023445EF9A5A32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+					"/Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-include",
+					"/Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64/SYFFmpeg.framework/Headers/syp_ffmpeg_prefix.h",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syplayer.demo.ios;
+				PRODUCT_NAME = "syplayer-ios";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wconversion",
+					"-Wsign-conversion",
+				);
+			};
+			name = Debug;
+		};
+		9504ABA2409FB67E6B92C349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++23";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+					"/Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/sylar/Documents/syplayer/include,
+					/Users/sylar/Documents/syplayer/src,
+					"$(SRCROOT)/generated",
+				);
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_PRIVATE_FILE = /Users/sylar/Documents/syplayer/swift/SYPlayerKit/SYPlayerKit.private.modulemap;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-include",
+					"/Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64/SYFFmpeg.framework/Headers/syp_ffmpeg_prefix.h",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.syplayer.SYPlayerKit;
+				PRODUCT_NAME = SYPlayerKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(inherited) /Users/sylar/Documents/syplayer/build-ffmpeg/out/SYFFmpeg.xcframework/ios-arm64/SYFFmpeg.framework/Headers";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wconversion",
+					"-Wsign-conversion",
+				);
+			};
+			name = Debug;
+		};
+		AEBF4FCC180F3284ED267A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F5EEEDFD3B16064734329AC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F4B9DA271B239C75B4179F0 /* Build configuration list for PBXNativeTarget "SYPlayerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2784AD066BBF6D467C83D27B /* Release */,
+				9504ABA2409FB67E6B92C349 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7863FE8DDA7D46D34555D34 /* Build configuration list for PBXNativeTarget "syplayer-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F9A10849FE8429CA2FAA35 /* Release */,
+				506AA51CC6023445EF9A5A32 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB5690F81D2A44ADECCD79B2 /* Build configuration list for PBXProject "syplayer-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEBF4FCC180F3284ED267A17 /* Debug */,
+				F5EEEDFD3B16064734329AC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 067D7DC7AED1E4E89E18FC41 /* Project object */;
+}
